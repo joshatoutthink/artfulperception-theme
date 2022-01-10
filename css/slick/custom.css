@@ -1,0 +1,26 @@
+.slick-slider img {
+    display: inline;
+}
+
+.ted-video {
+    width: 376px;
+    height: 188px;
+}
+
+.ted-video-container {
+    max-width: 376px;
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .ted-video {
+        width: 732px;
+        height: 420px;
+    }
+
+    .ted-video-container {
+        max-width: 732px;
+        width: 100%;
+    }
+}
