@@ -34,7 +34,7 @@ $url = get_stylesheet_directory_uri();
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href=<?php echo $url . "/css/slick/slick-theme.css?"; ?>/>
 	<link rel="stylesheet" type="text/css" href=<?php echo $url . "/css/slick/custom.css?";?>/>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
@@ -64,7 +64,7 @@ $url = get_stylesheet_directory_uri();
 <div class="container-fluid m-0 p-0">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark mr-auto ml-auto mt-0 mb-0 p-3 bg-primary fixed-top bottom-shadow">
             <div class="container w-75 mr-auto ml-auto">
-                <a class="navbar-brand text-white" href="index.html">
+            <a class="navbar-brand text-white" href=<?php echo site_url(); ?>>
                     <div class="logo"></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,16 +73,16 @@ $url = get_stylesheet_directory_uri();
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-uppercase font-weight-medium align-top">
                         <li class="nav-item mr-4 mt-3 mt-sm-3 mt-lg-0">
-                            <a class="nav-link p-0" href="about-course.html">About</a>
+                            <a class="nav-link p-0" href="/about-course">About</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a class="nav-link p-0" href="participants-corporate.html">Participants</a>
+                            <a class="nav-link p-0" href="/participants-corporate">Participants</a>
                         </li>
                         <li class="nav-item mr-4">
-                            <a class="nav-link p-0" href="media-audio-video.html">Media</a>
+                            <a class="nav-link p-0" href="/media-audio-video">Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="index.html#contact">Contact</a>
+                            <a class="nav-link p-0" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>

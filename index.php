@@ -117,7 +117,7 @@
 
             <div class="row mt-6">
                 <div class="col text-center">
-                    <a href="about-course.html" class="action-button">Learn More</a>
+                    <a href="about-course"action-button">Learn More</a>
                 </div>
             </div>
 

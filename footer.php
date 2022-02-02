@@ -22,27 +22,27 @@ $url = get_stylesheet_directory_uri();
 							<div class="container-fluid footer-links">
 									<div class="row p-5">
 											<div class="col-sm mb-3">
-													<span class="font-weight-bold"><a href="index.html">Home</a></span>
+												<span class="font-weight-bold"><a href=<?php echo site_url();?> >Home</a></span>
 											</div>
 											<div class="col-sm mb-3">
 													<span class="font-weight-bold">About</span><br/>
-													<a href="about-course.html">Course Info</a><br/>
-													<a href="about-amy-herman.html">Amy Herman</a>
+													<a href="/about-course">Course Info</a><br/>
+													<a href="/about-amy-herman">Amy Herman</a>
 											</div>
 											<div class="col-sm mb-3">
 													<span class="font-weight-bold">Participants</span><br/>
-													<a href="participants-corporate.html">Corporations</a><br/>
-													<a href="participants-education.html">Education</a><br/>
-													<a href="participants-finance.html">Financial Services</a><br/>
-													<a href="participants-law-enforcement.html">Intelligence, Law Enforcement, and Military</a><br/>
-													<a href="participants-legal.html">Law</a><br/>
-													<a href="participants-medicine.html">Medicine and Healthcare</a><br/>
-													<a href="participants-non-profit.html">Not-for-Profit and Government Agencies</a><br/>
+													<a href="/participants-corporate">Corporations</a><br/>
+													<a href="/participants-education"|>Education</a><br/>
+													<a href="/participants-finance">Financial Services</a><br/>
+													<a href="/participants-law-enforcement">Intelligence, Law Enforcement, and Military</a><br/>
+													<a href="/participants-legal">Law</a><br/>
+													<a href="/participants-medicine">Medicine and Healthcare</a><br/>
+													<a href="/participants-non-profit">Not-for-Profit and Government Agencies</a><br/>
 											</div>
 											<div class="col-sm">
 													<span class="font-weight-bold">Media</span><br/>
-													<a href="media-articles.html">News</a><br/>
-													<a href="media-audio-video.html">Audio &amp; Video</a><br/>
+													<a href="/media-articles">News</a><br/>
+													<a href="/media-audio-video">Audio &amp; Video</a><br/>
 											</div>
 									</div>
 							</div>
@@ -104,8 +104,11 @@ $url = get_stylesheet_directory_uri();
 </div><!-- #container -->
 
 <?php $url = get_stylesheet_directory_uri(); ?>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src=<?php echo $url."/js/slider.js"; ?> ></script>
 </div><!-- #page -->
+	
+		<script> var $ = jQuery</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src=<?php echo $url."/js/slider.js"; ?> ></script>
+		<?php wp_footer( ); ?>
 	</body>
 </html>

@@ -1,24 +1,6 @@
 .text-sm {
   font-size: .75rem; }
-
-.serif {
-  font-family: "Roboto Slab"; }
-
-.sans-serif {
-  font-family: Roboto; }
-
-.font-weight-light {
-  font-weight: 100; }
-
-.font-weight-medium {
-  font-weight: 500; }
-
-/*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+   
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -47,12 +29,110 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: Roboto;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+  --BG: #EDEDED;
+    --PrimaryBlackBrown: #413E36;
+    --PrimaryGold: #AD9759;
+    --PrimaryBeige: #DDCDBA;
+    --PrimaryWhite: #FFFFFF;
+    --SecondaryDarkGold: #776E55;
+    --SecondaryLightPeach: #FFF7EA;
+    --SecondaryDarkPeach: #C8BAA6;
+    --SecondaryCharcoal: #545454;
+    --SecondaryDarkGray: #6C6C6C;
+    --SecondaryGray: #DCDCDC;
+    --GRADIENTONLYstartcolor: #FED18E;
+    --GRADIENTONLYendcolor: #D7ACAC;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
+
+
+
+/* 
+ *
+ * SBI STYLES
+ *
+ *
+ * */
+/* - GRID - */
+#sc-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(1px,1fr));
+  gap:24px;
+}
+
+/* - Image Card - */
+.sc-social-item{
+  background: #fff;
+}
+.sc-social-photo-desc{
+  padding:45px 30px;
+  line-height:1.35;
+  color:var(--SecondaryDarkGray);
+  font-size:20px;
+}
+
+.sc-social-item .sc-social-date{
+  font-family: Sackers Gothic Heavy AT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--SecondaryDarkGold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-block-end:10px;
+}
+.sc-social-photo-desc .sc-social-caption{ 
+  line-height:inherit;
+  font-size:inherit;
+  margin-block-end:20px;
+}
+
+.sc-social-photo-desc a{ 
+  font-style:italic;
+  color:var(--SecondaryDarkGold);
+  text-decoration:none;
+}
+.sc-social-photo-desc a:hover{ 
+  color:var(--PrimaryGold);
+}
+/* - PHOTO - */
+.sc-social-photo-link{
+  position:relative;
+  color:white;
+  display:block;
+  aspect-ratio:1/1;
+  width:100%;
+  height:100%;	
+  overflow:hidden;
+  opacity:.8;
+}
+.sc-social-photo-link:hover{
+  opacity:1;
+  color:white;
+}
+
+.sc-social-photo-link svg{
+  font-size:25px;
+  position:absolute;
+  bottom:20px;
+  right:20px;
+  opacity:0;
+}
+
+.sc-social-photo-link:hover svg{
+  opacity:1;
+  filter:drop-shadow(0 0 10px var(--SecondaryDarkGold));
+}
+
+
+
+
 
 html {
   font-family: sans-serif;
@@ -6778,10 +6858,10 @@ a, a:hover {
   max-width: 125px;
   height: auto; }
 
-.action-button, .action-button-sm,
-.action-button-sm:hover,
-.action-button:hover,
-.action-button-sm:hover {
+.action-button.action-button, .action-button-sm.action-button-sm,
+.action-button-sm:hover.action-button-sm:hover,
+.action-button:hover.action-button:hover,
+.action-button-sm:hover.action-button-sm:hover {
   background-color: #7B0D16;
   padding: 20px 40px 20px 40px;
   color: #fff;
@@ -6868,6 +6948,12 @@ a, a:hover {
   background-size: cover;
   height: 300px;
   transition: all 0.3s; }
+  .the-content{
+    margin-block-start:80px;
+  }
+  .admin-bar .the-content {
+    margin-block-start:calc(80px - 32px);
+  }
 .admin-bar .cover-bg{
   margin-top: calc(80px - 32px);
 }
@@ -6942,6 +7028,7 @@ ul.participants-list li span.name {
     font-size: 40px;
     padding-top: 300px; }
 
+  
   .cover,
   .cover-bg,
   .about-cover-bg,
@@ -6952,6 +7039,12 @@ ul.participants-list li span.name {
   .participants-non-profit-cover-bg {
     height: 700px;
     margin-top: 110px; }
+  .the-content {
+    margin-block-start:110px;
+  }
+  .admin-bar .the-content { 
+    margin-block-start:calc(110px - 32px);
+  }
 
   .promo-banner div.promo-content-container {
     width: 50%; }
