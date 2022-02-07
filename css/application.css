@@ -2791,9 +2791,11 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none; }
 
-.menu-item {
+#navbar .menu-item{
   font-size:16px;
   text-transform: uppercase;
+}
+.menu-item {
   display: block;
   padding: 0.5rem 1rem; }
   .menu-item:hover, .menu-item:focus {
