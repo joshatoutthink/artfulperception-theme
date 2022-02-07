@@ -30,19 +30,6 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: Roboto;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
-  --BG: #EDEDED;
-    --PrimaryBlackBrown: #413E36;
-    --PrimaryGold: #AD9759;
-    --PrimaryBeige: #DDCDBA;
-    --PrimaryWhite: #FFFFFF;
-    --SecondaryDarkGold: #776E55;
-    --SecondaryLightPeach: #FFF7EA;
-    --SecondaryDarkPeach: #C8BAA6;
-    --SecondaryCharcoal: #545454;
-    --SecondaryDarkGray: #6C6C6C;
-    --SecondaryGray: #DCDCDC;
-    --GRADIENTONLYstartcolor: #FED18E;
-    --GRADIENTONLYendcolor: #D7ACAC;
 }
 
 *,
@@ -51,84 +38,6 @@
   box-sizing: border-box; }
 
 
-
-/* 
- *
- * SBI STYLES
- *
- *
- * */
-/* - GRID - */
-#sc-grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(1px,1fr));
-  gap:24px;
-}
-
-/* - Image Card - */
-.sc-social-item{
-  background: #fff;
-}
-.sc-social-photo-desc{
-  padding:45px 30px;
-  line-height:1.35;
-  color:var(--SecondaryDarkGray);
-  font-size:20px;
-}
-
-.sc-social-item .sc-social-date{
-  font-family: Sackers Gothic Heavy AT;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--SecondaryDarkGold);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-block-end:10px;
-}
-.sc-social-photo-desc .sc-social-caption{ 
-  line-height:inherit;
-  font-size:inherit;
-  margin-block-end:20px;
-}
-
-.sc-social-photo-desc a{ 
-  font-style:italic;
-  color:var(--SecondaryDarkGold);
-  text-decoration:none;
-}
-.sc-social-photo-desc a:hover{ 
-  color:var(--PrimaryGold);
-}
-/* - PHOTO - */
-.sc-social-photo-link{
-  position:relative;
-  color:white;
-  display:block;
-  aspect-ratio:1/1;
-  width:100%;
-  height:100%;	
-  overflow:hidden;
-  opacity:.8;
-}
-.sc-social-photo-link:hover{
-  opacity:1;
-  color:white;
-}
-
-.sc-social-photo-link svg{
-  font-size:25px;
-  position:absolute;
-  bottom:20px;
-  right:20px;
-  opacity:0;
-}
-
-.sc-social-photo-link:hover svg{
-  opacity:1;
-  filter:drop-shadow(0 0 10px var(--SecondaryDarkGold));
-}
 
 
 
