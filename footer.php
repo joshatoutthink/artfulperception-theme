@@ -26,23 +26,22 @@ $url = get_stylesheet_directory_uri();
 											</div>
 											<div class="col-sm mb-3">
 													<span class="font-weight-bold">About</span><br/>
-													<a href="/about-course">Course Info</a><br/>
-													<a href="/about-amy-herman">Amy Herman</a>
+													<?php wp_nav_menu([
+														'menu'	=> 'about-menu',
+													]); ?>
 											</div>
 											<div class="col-sm mb-3">
 													<span class="font-weight-bold">Participants</span><br/>
-													<a href="/participants-corporate">Corporations</a><br/>
-													<a href="/participants-education"|>Education</a><br/>
-													<a href="/participants-finance">Financial Services</a><br/>
-													<a href="/participants-law-enforcement">Intelligence, Law Enforcement, and Military</a><br/>
-													<a href="/participants-legal">Law</a><br/>
-													<a href="/participants-medicine">Medicine and Healthcare</a><br/>
-													<a href="/participants-non-profit">Not-for-Profit and Government Agencies</a><br/>
+													<?php wp_nav_menu([
+														'menu'	=> 'participants-menu',
+													]); ?>
 											</div>
 											<div class="col-sm">
 													<span class="font-weight-bold">Media</span><br/>
-													<a href="/media-articles">News</a><br/>
-													<a href="/media-audio-video">Audio &amp; Video</a><br/>
+													<?php wp_nav_menu([
+														'menu'	=> 'media-menu',
+													]); ?>
+
 											</div>
 									</div>
 							</div>
