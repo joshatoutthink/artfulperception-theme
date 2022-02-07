@@ -28,18 +28,21 @@ $url = get_stylesheet_directory_uri();
 													<span class="font-weight-bold">About</span><br/>
 													<?php wp_nav_menu([
 														'menu'	=> 'about-menu',
+														'menu-class'	=> 'footer-menu',
 													]); ?>
 											</div>
 											<div class="col-sm mb-3">
 													<span class="font-weight-bold">Participants</span><br/>
 													<?php wp_nav_menu([
 														'menu'	=> 'participants-menu',
+														'menu-class'	=> 'footer-menu',
 													]); ?>
 											</div>
 											<div class="col-sm">
 													<span class="font-weight-bold">Media</span><br/>
 													<?php wp_nav_menu([
 														'menu'	=> 'media-menu',
+														'menu-class'	=> 'footer-menu',
 													]); ?>
 
 											</div>
