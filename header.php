@@ -64,27 +64,22 @@ $url = get_stylesheet_directory_uri();
 <div class="container-fluid m-0 p-0">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark mr-auto ml-auto mt-0 mb-0 p-3 bg-primary fixed-top bottom-shadow">
             <div class="container w-75 mr-auto ml-auto">
+
             <a class="navbar-brand text-white" href=<?php echo site_url(); ?>>
                     <div class="logo"></div>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".menu-container" aria-controls="menu-container" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto text-uppercase font-weight-medium align-top">
-                        <li class="nav-item mr-4 mt-3 mt-sm-3 mt-lg-0">
-                            <a class="nav-link p-0" href="/about-course">About</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a class="nav-link p-0" href="/participants-corporate">Participants</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a class="nav-link p-0" href="/media-audio-video">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <!--
+                START of MAIN NAVIGATION
+                    -->
+                <?php
+                wp_nav_menu( array( 
+                    'theme_location' => 'primary', 
+                    'container_class' => 'collapse navbar-collapse menu-container',
+                    'menu_class' => 'navbar-nav'
+                )); 
+                ?>
             </div>
         </nav>
